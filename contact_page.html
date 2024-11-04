@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact_style.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 id="muneeb-nadeem" class="logo">Muneeb Nadeem</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="service_page.html">Services</a></li>
+        <li><a href="intake_page.html" id="con">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Contact Content -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <ul id="suggestions"></ul>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or reach me on social media:</p>
+    <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+  </section>
+
+  <footer>
+    <div class="content">
+      <h2 id="muneeb-nadeem-1" class="logo">Muneeb Nadeem</h2>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="service_page.html">Services</a></li>
+          <li><a href="intake_page.html">Complete Intake</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/linkedin-in-brands-solid.svg"
+            width="24"
+            height="24"
+            alt="LinkedIn"
+          />
+        </a>
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/github-brands-solid.svg"
+            width="24"
+            height="24"
+            alt="GitHub"
+          />
+        </a>
+      </div>
+    </div>
+    <p>© 2024 Muneeb Nadeem | Frontend Developer</p>
+  </footer>
+  <script defer src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Muneeb Nadeem | Frontend Developer</title>
+    <link rel="stylesheet" href="serviceStyle.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <h1 id="muneeb-nadeem" class="logo">Muneeb Nadeem</h1>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="service_page.html">Services</a></li>
+            <li><a href="intake_page.html" id="con">Contact</a></li>
+          </ul>
+          <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </header>
+
+      <main role="main">
+        <section class="services-container">
+          <div class="services-tabs">
+            <button class="tab-button active" data-service="website">
+              Website Development
+            </button>
+            <button class="tab-button" data-service="ui">
+              User Interface Design
+            </button>
+            <button class="tab-button" data-service="responsive">
+              Responsive Design
+            </button>
+          </div>
+
+          <div class="service-content active" id="website">
+            <div class="service-image">
+              <img
+                src="/assets/service1.jpg"
+                alt="Website Development"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-description">
+              <h2>Website Development</h2>
+              <p>
+                Transform your ideas into reality with expertly crafted
+                websites. As a professional frontend developer, I specialize in
+                creating responsive and visually appealing designs that engage
+                users and drive results. My approach focuses on understanding
+                your unique requirements and delivering a product that not only
+                looks great but also functions seamlessly across all devices.
+                With a keen eye for detail and a passion for innovation, I
+                ensure that your website stands out in the digital landscape.
+                Let's work together to elevate your online presence and create a
+                site that truly represents your brand.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-content" id="ui">
+            <div class="service-image">
+              <img
+                src="/assets/service2.jpg"
+                alt="User Interface Design"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-description">
+              <h2>User Interface Design</h2>
+              <p>
+                Elevate your digital products with exceptional user interface
+                design. As a professional frontend developer, I understand that
+                a great UI is essential for user satisfaction and engagement. I
+                focus on creating intuitive layouts that guide users
+                effortlessly through your application or website. By utilizing
+                the latest design trends and tools, I ensure that your interface
+                is not only aesthetically pleasing but also functional and
+                accessible. Let's collaborate to design an interface that
+                resonates with your audience and enhances their overall
+                experience with your brand.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-content" id="responsive">
+            <div class="service-image">
+              <img
+                src="/assets/service3.jpg"
+                alt="Responsive Design"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-description">
+              <h2>Responsive Design</h2>
+              <p>
+                In today's mobile-driven world, having a responsive design is
+                crucial for your website's success. I specialize in creating
+                designs that automatically adjust to fit any screen size,
+                providing a seamless experience for users, whether they're on a
+                desktop, tablet, or smartphone. My responsive design approach
+                prioritizes usability and aesthetics, ensuring that your content
+                is easily accessible and visually appealing on all devices. By
+                investing in a responsive design, you not only enhance user
+                engagement but also improve your search engine rankings. Let's
+                make your website adaptable and future-proof together.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="cta" class="section">
+          <div class="cta-text">
+            <h2>Let's talk</h2>
+            <p>We would love to hear from you!</p>
+          </div>
+          <div class="cta-button">
+            <a href="intake_page.html">Get in Touch</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="content">
+          <h2 id="muneeb-nadeem-1" class="logo">Muneeb Nadeem</h2>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="service_page.html">Services</a></li>
+              <li><a href="intake_page.html">Complete Intake</a></li>
+              <li><a href="index.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/linkedin-in-brands-solid.svg"
+                width="24"
+                height="24"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/github-brands-solid.svg"
+                width="24"
+                height="24"
+                alt="GitHub"
+              />
+            </a>
+          </div>
+        </div>
+        <p>© 2024 Muneeb Nadeem | Frontend Developer</p>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        menuToggle.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+          menuToggle.classList.toggle("active");
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (event) {
+          const isClickInsideMenu = navMenu.contains(event.target);
+          const isClickOnToggle = menuToggle.contains(event.target);
+
+          if (
+            !isClickInsideMenu &&
+            !isClickOnToggle &&
+            navMenu.classList.contains("active")
+          ) {
+            navMenu.classList.remove("active");
+            menuToggle.classList.remove("active");
+          }
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const serviceContents = document.querySelectorAll('.service-content');
+  
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const service = button.getAttribute('data-service');
+        
+        // Remove active class from all buttons and contents
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        serviceContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding content
+        button.classList.add('active');
+        document.getElementById(service).classList.add('active');
+      });
+    });
+  });
+    </script>
+  </body>
+</html>
