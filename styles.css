@@ -106,7 +106,7 @@ main {
 }
 
 .home-section {
-  background-image: url("assets/home_page.jpg");
+  background-image: url("/assets/home_page.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 80px);
@@ -421,12 +421,15 @@ footer {
   list-style: none;
   display: flex;
   gap: 1rem;
+  position: relative;
+  right: 6rem;
+  top: 0.3rem;
 }
 
 .footer-nav a {
   color: var(--white);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: color 0.3s ease;
 }
 
@@ -529,6 +532,15 @@ footer > p {
     font-size: 1.9rem;
     color: var(--primary-color);
     margin: 4rem 0rem 0rem 3.5rem;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    right: 0;
+    top: 0;
   }
 
   .about-us a {
@@ -736,6 +748,15 @@ footer > p {
 
   .about-section {
     width: 111%;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    right: 0rem;
+    top: 0.3rem;
   }
 
   .about-us h2 {

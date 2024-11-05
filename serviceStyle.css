@@ -30,6 +30,7 @@ h2,
 .logo {
   font-size: 2rem;
   padding: 0.5rem 0;
+ 
 }
 
 .content {
@@ -63,7 +64,7 @@ nav {
 .nav-menu a {
   color: var(--white);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   transition: color 0.3s ease;
 }
 
@@ -163,7 +164,7 @@ main {
   background-color: #1dab1d;
   color: var(--white);
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 11rem;
   margin-top: 4rem;
 }
 
@@ -205,20 +206,24 @@ main {
 footer {
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 2rem 5%;
+  padding: 1rem 12rem;
 }
 
 .footer-nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  position: relative;
+  right: 2rem;
 }
 
 .footer-nav a {
   color: var(--white);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: color 0.3s ease;
+  position: relative;
+  right: 3rem;
 }
 
 .footer-nav a:hover {
@@ -250,9 +255,15 @@ footer > p {
     flex-direction: column;
   }
 
+ 
+
   .tab-button {
     width: 100%;
     margin-bottom: 0.5rem;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
   }
 
   .menu-toggle {
@@ -278,6 +289,11 @@ footer > p {
     right: 0;
   }
 
+  .footer-nav ul {
+    position: relative;
+    right: 0rem;
+  }
+
   .nav-menu li {
     margin: 1.5rem 0;
   }
@@ -297,6 +313,16 @@ footer > p {
   .content {
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-nav a {
+    font-size: 1rem;
+    position: relative;
+    right: 0rem;
+  }
+
+  #cta {
+    padding: 4rem 2rem;
   }
 
   #cta-text {
@@ -340,14 +366,36 @@ footer > p {
     display: block;
     width: 26rem;
     position: relative;
-    right: 4rem;
+    right: 3.6rem;
+    padding: 3rem 2rem;
   }
+
+  
 
   .cta-text {
     width: 22rem;
     position: relative;
     right: 35px;
     margin: 0px auto;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+  }
+
+  .footer-nav a{
+    font-size: 1rem;
+    position: relative;
+    right: 0rem;
+  }
+
+  .footer-nav ul {
+    position: relative;
+    right: 0rem;
+  }
+
+  footer {
+    padding: 1rem 0rem;
   }
 
   #cta h2 {
@@ -364,7 +412,7 @@ footer > p {
   }
 
   .cta-button {
-    margin-left: 1rem;
+    margin-left: 6rem;
     width: 10rem;
   }
 }
