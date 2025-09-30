@@ -58,9 +58,9 @@ I love turning ideas into elegant digital experiences using **modern web technol
 
 ## 📫 Connect With Me  
 
-- LinkedIn: [linkedin.com/in/muneeb-nadeem](https://linkedin.com/in/muneeb-nadeem)  
+- LinkedIn: [linkedin.com/in/muneeb-nadeem](https://linkedin.com/in/muneebnadeem)  
 - GitHub: [github.com/Muneeb2721](https://github.com/Muneeb2721)  
-- Email: **muneebnadeem2721@gmail.com**  
+- Email: **muneebnadeem1870@gmail.com**  
 
 ---
 
